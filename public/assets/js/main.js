@@ -39,10 +39,18 @@ window.addEventListener('load', () => {
     let etv = ''
     exp.forEach(i => {
         i.skill = app.expSkills(i.skill, skills)
-        i.ms=templates.ms(i.skill)
+        i.ms = templates.ms(i.skill)
         etv += templates.e(i)
     })
     expDiv.innerHTML = etv
+
+    let psDiv = document.getElementById("id-AR3411")
+    let ps = data.sp
+    let psv = ''
+    ps.forEach(i=>{
+        psv+=templates.eps(i)
+    })
+    psDiv.innerHTML=psv
 });
 
 
@@ -83,6 +91,16 @@ templates.ms = (d) => {
         }
     }
     return s
+}
+templates.eps = (d) => {
+    return `
+    <div class="col-sm-6 col-xs-12">
+        <label>${d[0]}</label>
+        <div class="progress">
+            <div class="progress-bar bg-${d[1]<50?'danger':d[1]<76?'info':d[1]<90?'primary':'success'}" role="progressbar" style="width: ${d[1]}%" aria-valuenow="35"
+                aria-valuemin="0" aria-valuemax="100">${d[1]}%</div>
+        </div>
+    </div>`
 }
 
 

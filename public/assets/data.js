@@ -44,7 +44,7 @@ const d = {
     ],
     sp:[
         ['Java',80],
-        ['PHP',90]
+        ['PHP',90],
         ['JavaScript',100],
         ['JQuery',95],
         ['Python',60],
@@ -72,7 +72,7 @@ const d = {
             loc:'New Delhi',
             description:'Worked as Software Developer, developed new websites, code in php framework for adding new features in projects, create apis using nodejs, libraries using javascript, integrate those with exiting project. Website debugging, code optimization, web performance along with code reviews, ',
             tenure:['Worked','10 Months'],
-            skill:['PHP','JavaScript','JQuery','HTML','LESS','CSS','NodeJs','ExpressJs','Codeignitor','Laravel','ReactJs','Bootstrap','Materialize','API Development','MySQL','MongoDB','Postman','JIRA','ClickUp','GIT','GitHub','Docker']
+            skill:['PHP','JavaScript','JQuery','HTML','LESS','CSS','NodeJs','ExpressJs','CodeIgnitor','Laravel','ReactJs','Bootstrap','Materialize','API Development','MySQL','MongoDB','Postman','JIRA','ClickUp','GIT','GitHub','Docker']
         },
         {
             image:'./assets/images/buzzyears-edu-logo-1.png',
