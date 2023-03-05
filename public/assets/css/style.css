@@ -1,0 +1,151 @@
+:root {
+    --fs09rem : 0.9rem;
+    --fs08rem : 0.8rem;
+    --fs05rem : 0.5rem;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+
+label {
+    margin-bottom: 0.2rem;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+header.header-section {
+    padding: 2rem 1rem;
+    height: 25rem;
+    overflow: hidden;
+}
+
+header .AR3212-JX {
+    overflow: hidden;
+}
+
+header .AR3213-JX {
+    height: 20rem;
+    display: flex;
+}
+
+header .AR3214-JX {
+    padding: 100px 0 20px;
+}
+
+header .AR3214-JX h1 {
+    margin-bottom: 0;
+}
+
+header .AR3214-JX p {
+    margin-bottom: 0;
+}
+
+header .AR3215-JX {}
+
+header .AR3215-JX .AR32151-JX {
+    width: 100%;
+}
+
+section.portfolio-section, section.projects-section {
+    padding: 2rem 1rem;
+    background-color: #f0f0f0;
+}
+
+section.portfolio-section h4, section.skills-section h4 {
+    padding-bottom: var(--fs05rem);
+}
+
+section.portfolio-section .media {
+    padding: 1rem 0;
+}
+
+section.portfolio-section .media .AR3318-JX {
+    width: 80px;
+}
+
+section.portfolio-section .media .position-role-JX {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: baseline;
+}
+
+section.portfolio-section .media .position-role-JX .tenure-JX {
+    font-size: var(--fs09rem);
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+section.portfolio-section .AR3312-JX {
+    gap: 15px;
+}
+
+section.portfolio-section .experience-row-JX {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+section.portfolio-section .experience-row-JX .tools-tech-JX {
+    padding: 0;
+    font-size: var(--fs09rem);
+}
+
+section.portfolio-section .experience-row-JX .tools-tech-JX ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+
+section.portfolio-section .experience-row-JX .tools-tech-JX li {
+    padding: 2px 8px;
+    margin: 0 5px;
+    border-radius: 50px;
+}
+
+.progress {
+    height: 8px;
+}
+
+.progress-bar{
+    font-size: var(--fs05rem);
+}
+
+section.portfolio-section .media .company-name-location-JX {
+    font-size: var(--fs08rem);
+    border-bottom: 1px solid #b3b3b3;
+}
+
+section.portfolio-section .media .work-description-JX {
+    font-size: var(--fs09rem);
+}
+
+section.portfolio-section .experience-row-JX .experience-JX {}
+
+section.portfolio-section .experience-row-JX .skills-JX label {
+    font-size: var(--fs09rem);
+}
+
+
+section.skills-section{
+    padding: 2rem 1rem;
+}
+
+
+
+@media only screen and (max-device-width : 640px) {
+    .media {
+        flex-direction: column;
+    }
+}
