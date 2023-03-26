@@ -51,6 +51,23 @@ header .AR3215-JX {}
 header .AR3215-JX .AR32151-JX {
     width: 100%;
 }
+ul.social-connect{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+ul.social-connect li{
+    display: inline;
+    cursor: pointer;
+}
+.github-sp{
+    color: rgba(0,0,0,0.7);
+}
+.github-sp:hover{
+    color: rgba(0,0,0,1);
+}
 
 section.portfolio-section, section.projects-section {
     padding: 2rem 1rem;
@@ -81,6 +98,14 @@ section.portfolio-section .media .position-role-JX .tenure-JX {
     position: absolute;
     top: 0;
     right: 20px;
+}
+.modelpoints {
+    display: none;
+}
+.model-close{
+    cursor: pointer;
+    position: absolute;
+    right: 6px;
 }
 
 section.portfolio-section .AR3312-JX {
@@ -130,6 +155,10 @@ section.portfolio-section .media .company-name-location-JX {
 section.portfolio-section .media .work-description-JX {
     font-size: var(--fs09rem);
 }
+section.portfolio-section .media .work-description-JX .read-more{
+    cursor: pointer;
+    color: #0056b3;
+}
 
 section.portfolio-section .experience-row-JX .experience-JX {}
 
@@ -143,9 +172,104 @@ section.skills-section{
 }
 
 
+.projects-section .prj-box{
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+.projects-section .prj-box .prj-point-link{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+.projects-section .prj-box .prj-point-link i{
+    color: #000;
+    cursor: pointer;
+}
+.projects-section .prj-box h4,.projects-section .prj-box p{
+    padding: 0;
+    margin: 0;
+}
+.projects-section .prj-box h4 p{
+    font-size: 1rem;
+}
+
+.projects-section .prj-box .prj-name{
+    background: #ea3;
+    padding: 8px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+}
+.projects-section .prj-box .prj-name h4{
+    font-weight: bold;
+    /* padding-right: 35px; */
+}
+.projects-section .prj-box .prj-name .prj-type{
+    font-weight: normal;
+}
+.projects-section .prj-box .prj-detail .detail-1{
+    background: #eee;
+}
+.projects-section .AR3512-JX{
+    position: relative;
+    padding-bottom: 30px;
+}
+.model-JX{
+    z-index: 100;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.model-JX .experience-points{
+    max-width: 60%;
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.model-JX .experience-points .exp-content{
+    padding: 25px;
+}
+.model-JX .experience-points .exp-content .exp-body p{
+    margin: 0;
+}
+.model-JX .experience-points .exp-content .exp-body ul{
+    margin: 0;
+}
+
+
+@media only screen and (min-device-width : 640px) {
+    .AR3512-JX::before{
+        content: '';
+        width: 100%;
+        border-left: solid 1px #000;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: 1; 
+    }
+}
 
 @media only screen and (max-device-width : 640px) {
     .media {
         flex-direction: column;
     }
+}
+
+
+
+.text-decoration-underline{
+    text-decoration: underline;
 }
