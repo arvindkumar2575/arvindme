@@ -71,6 +71,7 @@ window.addEventListener('load', () => {
     })
     pDiv.innerHTML=pv
 });
+
 let modellayout = document.querySelector('#id-AR3611')
 let modelbody = document.querySelector('#id-AR3611 .exp-content')
 document.addEventListener('click', function (e) {
@@ -91,7 +92,6 @@ document.addEventListener('click', function (e) {
         
     }
 });
-
 
 
 templates.e = (count,d) => {
