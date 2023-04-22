@@ -197,7 +197,7 @@ const d = {
             {
                 name:'OSN Services',
                 type:'Website & Webapp',
-                details:'Build for manage the students in school. Focus majorly on student attendence, assessment, quiz, marks records.',
+                details:'Build for collect customer details related with return files. Now it\'s new features are courses & user based portal access.',
                 app_link:'http://osnservices.in/',
                 tools_tech:'PHP, HTML, CSS, JavaScript, Codeignitor, Mysql, phpmyadmin, VSCode',
                 status:'Active',
