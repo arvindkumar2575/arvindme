@@ -8,7 +8,13 @@ body {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    /* max-width: 1440px; */
+}
+
+.mxwd1440{
     max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 label {
@@ -35,7 +41,7 @@ header .AR3213-JX {
 }
 
 header .AR3214-JX {
-    padding: 100px 0 20px;
+    padding: 70px 0 20px;
 }
 
 header .AR3214-JX h1 {
@@ -273,3 +279,10 @@ section.skills-section{
 .text-decoration-underline{
     text-decoration: underline;
 }
+
+
+
+
+
+
+

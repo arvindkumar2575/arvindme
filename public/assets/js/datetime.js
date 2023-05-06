@@ -1,42 +1,42 @@
-let app = {}
-let templates = {}
-let data = d.tn
 
 window.addEventListener('load',()=>{
-    let c = app.c(data,'tz')
-    console.log(typeof(c))
+    let c = app.c(data.tn,'tz')
+    let list = ''
     c.forEach(e=>{
-        console.log(e,app.td(e))
+        list+=templates.eachList(e)
     })
+
+    let t = app.selectByID('show-time')
+    // t.innerHTML=list
+
+
+    
+    
+    setInterval(()=>{
+        app.setdt()
+    },1000)
 })
 
-app.c = (d,type)=>{
-    let c = {}
-    let t = []
-    Object.entries(d).map(e1 => {
-        let key = ''
-        let val = ''
-        Object.entries(e1[1]).map(e2=>{
-            let k = e2[0]
-            let v = e2[1]
-            if(k=='continent'){
-                key=v
-            }
-            if(k=='newRow'){
-                val=v
-                v.forEach(element => {
-                    t.push(element.tz)
-                });
-            }
-        })
-        c["" + key + ""]=val
-    });
-    return type=='tz'?t:c
+
+
+app.setdt = () =>{
+    let date = new Date()
+    let c_sec = date.getSeconds()
+    let c_min = date.getMinutes()
+    let c_hr = date.getHours()
+    let hour = app.selectByID('hr')
+    let minute = app.selectByID('min')
+    let second = app.selectByID('sec')
+    second.innerHTML=app.timeFormat(c_sec)
+    minute.innerHTML=app.timeFormat(c_min)
+    hour.innerHTML=app.timeFormat(c_hr)
+}
+app.timeFormat = (t) => {
+    return t<10?`0${t}`:t
+}
+templates.eachList = (loc) => {
+    return templates.li(app.td(loc)+' '+loc)
 }
 
-app.td = (tz,lc=null)=>{
-    let locales = (lc==undefined || lc==null || lc=='')?'en-US':lc
-    return new Date(new Date().toLocaleString(locales, {timeZone: tz}))
-}
 
 
