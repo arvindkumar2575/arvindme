@@ -230,6 +230,7 @@ section.skills-section{
     left: 0;
     top: 0;
     padding-top: 100px;
+    padding-bottom: 100px;
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -265,12 +266,25 @@ section.skills-section{
         left: 0;
         top: 50%;
         z-index: 1; 
+    }.model-JX{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .model-JX .experience-points{
+        max-width: 70%;
     }
 }
 
 @media only screen and (max-device-width : 640px) {
     .media {
         flex-direction: column;
+    }
+    .model-JX{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .model-JX .experience-points{
+        max-width: 90%;
     }
 }
 

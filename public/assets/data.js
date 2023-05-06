@@ -98,7 +98,6 @@ const d = {
         'Leading 4-6 members team here',
         'Helping the teams in troubleshooting and resolving of the bugs',
         'Code reviews of junior developers and mentoring them',
-        '',
         'Create, built & deploy maven project on cloud & make them available as SaaS'
       ]
     },
