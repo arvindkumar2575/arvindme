@@ -10,6 +10,16 @@ window.addEventListener('load',()=>{
     // t.innerHTML=list
 
 
+    let date = new Date()
+    let tz = ''
+    let etz = app.selectByID('tz')
+    let ltz = app.selectByID('ltz')
+    let ofst = app.selectByID('ofst')
+    tz+=date.toLocaleDateString(undefined, {day:'2-digit',timeZoneName: 'long' }).substring(4).match(/\b(\w)/g).join('')
+    tz+=' ('+date.toLocaleDateString(undefined, {day:'2-digit',timeZoneName: 'long' }).substring(4)+')'
+    etz.innerHTML=tz
+    ltz.innerHTML=app.dateGMTHr()
+    ofst.innerHTML=date.getTimezoneOffset()
     
     
     setInterval(()=>{
@@ -30,6 +40,10 @@ app.setdt = () =>{
     second.innerHTML=app.timeFormat(c_sec)
     minute.innerHTML=app.timeFormat(c_min)
     hour.innerHTML=app.timeFormat(c_hr)
+}
+app.dateGMTHr = () => {
+    let gmt = Intl.DateTimeFormat().resolvedOptions().timeZone
+    return gmt
 }
 app.timeFormat = (t) => {
     return t<10?`0${t}`:t

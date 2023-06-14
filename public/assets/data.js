@@ -76,7 +76,7 @@ const d = {
       company_name: 'Infosys Limited',
       loc: 'Gurgaon',
       description: 'Working on AEM as AEM Developer and developing components, templates, workflows, sling models & services, other product integration and, work on CRXDE Editor, OSGi configuration, core component, ACS Common, Adobe I/O Runtime, ',
-      tenure: ['Present', '1 Year 2 Months'],
+      tenure: ['Present', '1 Year 5 Months'],
       skill: ['Java', 'Spring Boot', 'Maven', 'JavaScript', 'JQuery', 'HTML', 'LESS', 'CSS', 'NodeJs', 'Adobe Experience Manager(AEM)', 'Components Development', 'Slightly/HTL', 'Servlet', 'Services', 'Postman', 'JIRA', 'Confluence Tool', 'Jenkins', 'GIT', 'GitHub', 'BitBucket'],
       projects: [
         'MerckGroup Healthcare Projects',
@@ -93,7 +93,7 @@ const d = {
         'Create & use jenkins jobs for deployment of code on development server',
         'Deployment of git branches using jenkins CI/CD pipeline on development server',
         'Jira & confluence pages use for project management',
-        'Website optimization upto 9% which increase active users',
+        'Website optimization upto 9% which increase users retention',
         'Carrying out POCs to meet the requirements',
         'Leading 4-6 members team here',
         'Helping the teams in troubleshooting and resolving of the bugs',
