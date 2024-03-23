@@ -31,6 +31,11 @@ const d = {
     'GIT',
     'GitHub',
     'BitBucket',
+    'Azure Function',
+    'Azure CosmosDB',
+    'Azure Blob Storage',
+    'Azure API',
+    'Apache Kafka',
 
     'Materialize',
     'API Development',
@@ -38,6 +43,7 @@ const d = {
     'MongoDB',
     'ClickUp',
     'Docker',
+    'Rally',
 
     'Excel',
     'Google Spreadsheet',
@@ -65,18 +71,45 @@ const d = {
     ["Elastic Search"],
     ["Redis"],
     ["VS Code Editor"],
+    ["Apache Kafka"]
   ],
   tpi:[//thtird party integration
 
   ],
   e: [//experience
     {
+      image: './assets/images/accenture-logo-1.png',
+      designation: 'Senior Analyst',
+      company_name: 'Accenture Solutions Pvt Ltd',
+      loc: 'Gurgaon',
+      description: 'Working on Azure using Java application platform as Senior Developer and developing components, data workflows with help of Apache Kafka & consuming other services offer by Azure like API, Blob Storage, CosmosDB, Application Insights, Log Analytics, etc ',
+      tenure: ['Present', '4 Months'],
+      skill: ['Java', 'Spring Boot', 'Maven', 'JavaScript', 'Azure Function', 'Azure CosmosDB', 'Apache Kafka', 'Postman', 'Jenkins', 'GIT', 'GitHub', 'BitBucket', 'Rally'],
+      projects: [
+        'United Healthcare'
+      ],
+      points: [
+        'Components development using pure java',
+        'Builting java lamda functions and deploying on Azure API',
+        'Azure Function development using maven and maintain the data from source to destination',
+        'Using Apache Kafka for storing data and flow data using Java Functions through it',
+        'Testing of apis using postman tool',
+        'Create & use jenkins jobs for deployment of code on development server',
+        'Deployment of git branches using jenkins CI/CD pipeline on development server',
+        'Carrying out POCs to meet the requirements',
+        'Leading 3 members team here',
+        'Helping the teams in troubleshooting and resolving of the bugs',
+        'Code reviews of junior developers and mentoring them',
+        'Create, built & deploy maven project on cloud & make them available as SaaS'
+      ]
+    },
+    {
       image: './assets/images/infosys-logo-1.png',
       designation: 'Technology Analyst',
       company_name: 'Infosys Limited',
       loc: 'Gurgaon',
       description: 'Working on AEM as AEM Developer and developing components, templates, workflows, sling models & services, other product integration and, work on CRXDE Editor, OSGi configuration, core component, ACS Common, Adobe I/O Runtime, ',
-      tenure: ['Present', '1 Year 5 Months'],
+      tenure: ['Present', '1 Year 11 Months'],
       skill: ['Java', 'Spring Boot', 'Maven', 'JavaScript', 'JQuery', 'HTML', 'LESS', 'CSS', 'NodeJs', 'Adobe Experience Manager(AEM)', 'Components Development', 'Slightly/HTL', 'Servlet', 'Services', 'Postman', 'JIRA', 'Confluence Tool', 'Jenkins', 'GIT', 'GitHub', 'BitBucket'],
       projects: [
         'MerckGroup Healthcare Projects',

@@ -56,6 +56,7 @@ header .AR3215-JX {}
 
 header .AR3215-JX .AR32151-JX {
     width: 100%;
+    border-radius: 100%;
 }
 ul.social-connect{
     list-style: none;
